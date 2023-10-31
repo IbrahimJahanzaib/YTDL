@@ -1,4 +1,4 @@
-from app.ytdl import TikTokVideoInfo
+from ytdl import TikTokVideoInfo
 from fastapi import FastAPI, Response, status, HTTPException
 from pydantic import BaseModel
 

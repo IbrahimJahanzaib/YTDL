@@ -1,7 +1,7 @@
 FROM python:3.12-bookworm
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /main
 
 # Copy the requirements file to the container
 COPY requirements.txt .
@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application
-CMD ["uvicorn", "app:app"]
+CMD ["uvicorn", "main:app"]

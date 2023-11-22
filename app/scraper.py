@@ -20,7 +20,6 @@ class FacebookScraper:
     def extract_fb_link(self):
         chrome_options = Options()
         chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_experimental_option("detach", False)
         chrome_options.add_argument('--headless')
 
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)

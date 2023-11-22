@@ -31,7 +31,6 @@ class FacebookScraper:
         driver.find_element("xpath", '//*[@id="url"]').send_keys(video_link)
         driver.find_element("xpath", '//*[@id="send"]').click()
         now = datetime.now()
-        print("Current Time =", now.strftime("%H:%M:%S"))
         driver.implicitly_wait(10)
         matching_links = driver.find_elements(By.XPATH, f'//a[text()="{self.target_text}"]')
 

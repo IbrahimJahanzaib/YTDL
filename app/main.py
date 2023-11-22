@@ -21,6 +21,7 @@ app = FastAPI()
 
 formatted_data = {}
 
+
 @app.get('/dl_link', status_code=status.HTTP_200_OK)
 async def dl_link(data: Data):
     link = link_gen(data.link)
